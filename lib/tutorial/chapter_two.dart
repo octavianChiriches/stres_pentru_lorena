@@ -44,22 +44,21 @@ void main() {
   // >>> we start from the concept that if the student has 100 points at each section the grade would be 10;
   // >>> do the maths: worth percentage from what points we have;
 
-  const attendance = 90;
-  const homework = 80;
-  const exam = 94;
-  const attendancePercentage = 20;
-  const homeworkPercentage = 30;
-  const examPercentage = 50;
+  int attendance = 90;
+  int homework = 80;
+  int exam = 94;
+  int attendancePercentage = 20;
+  int homeworkPercentage = 30;
+  int examPercentage = 50;
 
-  const attendanceResult = (attendancePercentage*attendance) / 100;
+  double attendanceResult = (attendancePercentage*attendance) / 100;
   print(attendanceResult);
-  const homeworkResult = (homeworkPercentage*homework) / 100;
+  double homeworkResult = (homeworkPercentage*homework) / 100;
   print(homeworkResult);
-  const examResult = (examPercentage*exam) / 100;
+  double examResult = (examPercentage*exam) / 100;
   print(examResult);
-  var finalGrade = attendanceResult + homeworkResult + examResult;
-  final finalGradeRoundedDown = finalGrade.toInt();
-  print("Final grade is $finalGradeRoundedDown");
+  double finalGrade = attendanceResult + homeworkResult + examResult;
+  print("Final grade is $finalGrade");
   print("--------------------------");
 
   //“Challenge 2: Same same, but different”

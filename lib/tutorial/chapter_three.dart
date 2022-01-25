@@ -175,10 +175,10 @@ void main() {
 
   // Fibonacci sequence algo (simple) >>> calculate the next number by adding the current number to the old number;
 
-  var num = 9;
-  var a = 1;
-  var b = 0;
-  var temp = 0;
+  int num = 9;
+  int a = 1;
+  int b = 0;
+  int temp = 0;
 
   for (var i = 0; i < 30; i++) {
     temp = a;
