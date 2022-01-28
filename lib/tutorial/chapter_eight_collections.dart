@@ -44,10 +44,10 @@ void main() {
   print("2. For the values, add your own information.");
 
   final myInfo = {
-    'name' : ['Leo'],
-    'profession' : ['Software Tester'],
-    'country' : ['Romania'],
-    'city' : ['Cluj-Napoca']
+    'name' : 'Leo',
+    'profession' : 'Software Tester',
+    'country' : 'Romania',
+    'city' : 'Cluj-Napoca'
   };
   print(myInfo);
   print("-----------------------------------------------------------------------");
@@ -55,8 +55,8 @@ void main() {
   print("1. You suddenly decide to move to Toronto, Canada.");
   print("2. Programmatically update the values for country and city.");
 
-  myInfo['country'] = ['Canada'];
-  myInfo['city'] = ['Toronto'];
+  myInfo['country'] = 'Canada';
+  myInfo['city'] = 'Toronto';
 
   print(myInfo);
   print("-----------------------------------------------------------------------");
