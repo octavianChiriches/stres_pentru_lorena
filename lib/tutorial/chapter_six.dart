@@ -34,9 +34,9 @@ void main() {
   print("3. Add a method to the class that nicely formats a Student for printing.");
   print("4. Use the class to create students bert and ernie with grades of 95 and 85, respectively.");
 
-  final bert = Student("Bert", "No last name", 95);
+  final Student bert = Student("Bert", "No last name", 95);
   print(bert);
-  final ernie = Student("Ernie", "No last name.", 85);
+  final Student ernie = Student("Ernie", "No last name.", 85);
   print(ernie);
   print("-----------------------------------------------------------------------");
 
@@ -46,7 +46,7 @@ void main() {
   print("3. Don’t use the dart:math package but store your own version of pi as a static constant. ");
   print("4. Use your class to find the volume and surface area of a sphere with a radius of 12.");
 
-  final sphereRadius12 = Sphere(radius: 12);
+  final Sphere sphereRadius12 = Sphere(radius: 12);
   print(sphereRadius12.findSphereArea);
   print(sphereRadius12.findSphereVolume);
 }
@@ -59,13 +59,7 @@ class Password {
     return value;
   }
 
-  bool isValid() {
-    if (value.length > 8) {
-      return true;
-    } else {
-      return false;
-    }
-  }
+  bool isValid()=> value.length > 8;
 }
 
 class NewPassword {
