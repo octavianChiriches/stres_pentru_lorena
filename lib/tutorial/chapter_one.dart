@@ -42,7 +42,7 @@ void main() {
   // age = 30;
   // print(age);
 
-  var age = 16;
+  int age = 16;
   print(age);
   age = 30;
   print(age);
@@ -79,14 +79,13 @@ void main() {
   // Then calculate the two values for x using the equation above (noting that the ± means plus or minus, so one value of x for each).
   // Store the results in constants called root1 and root2 of type double.
 
-  num a = 3;
-  num b = 4;
-  num c = 5;
+  double a = 3;
+  double b = 4;
+  double c = 5;
 
-  num x1 = ((-b + sqrt(pow(b, 2) - (4*a*c))) / (2*a));
-  print(x1);
-  var x2 = ((-b + sqrt(pow(b, 2) - (4*a*c))) / (2*a));
-  print(x2);
+  double root1 = (-b + sqrt(pow(b, 2) - (4*a*c))) / (2*a);
+  print("$root1");
+  double root2 = (-b - sqrt(pow(b, 2) - (4*a*c))) / (2*a);
+  print("$root2");
 
-  // TODO: Lorena Please check!!
 }
