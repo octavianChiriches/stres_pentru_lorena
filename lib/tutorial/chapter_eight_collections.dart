@@ -38,6 +38,34 @@ void main() {
   ];
 
   print(bigMonths);
-  print("---------------------------------------?git status --------------------------------");
+  print("-----------------------------------------------------------------------");
+
+  print("1. Create a map with the following keys: name, profession, country and city. ");
+  print("2. For the values, add your own information.");
+
+  final myInfo = {
+    'name' : ['Leo'],
+    'profession' : ['Software Tester'],
+    'country' : ['Romania'],
+    'city' : ['Cluj-Napoca']
+  };
+  print(myInfo);
+  print("-----------------------------------------------------------------------");
+
+  print("1. You suddenly decide to move to Toronto, Canada.");
+  print("2. Programmatically update the values for country and city.");
+
+  myInfo['country'] = ['Canada'];
+  myInfo['city'] = ['Toronto'];
+
+  print(myInfo);
+  print("-----------------------------------------------------------------------");
+
+  print("1. Iterate over the map and print all the values.");
+
+  for (final entry in myInfo.entries) {
+    print('${entry.key} -> ${entry.value}');
+  }
+  print("-----------------------------------------------------------------------");
 
 }
