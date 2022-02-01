@@ -68,4 +68,26 @@ void main() {
   }
   print("-----------------------------------------------------------------------");
 
+  print("Mini-exercises - Higher Order Methods");
+  print("-----------------------------------------------------------------------");
+
+  print("Given the following exam scores:");
+
+  final scores = [89, 77, 46, 93, 82, 67, 32, 88];
+  print(scores);
+  print("-----------------------------------------------------------------------");
+
+
+  print("1. Use sort to find the highest and lowest grades.");
+
+  scores.sort();
+  print(scores);
+  print("-----------------------------------------------------------------------");
+
+  print("2. Use where to find all the B grades, that is, all the scores between 80 and 90.");
+
+  final bGrades = scores.where((score) => (80 < score) && (score < 90));
+  print(bGrades);
+  print("-----------------------------------------------------------------------");
+
 }
