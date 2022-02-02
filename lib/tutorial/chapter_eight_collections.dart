@@ -90,4 +90,73 @@ void main() {
   print(bGrades);
   print("-----------------------------------------------------------------------");
 
+  print("-----------------------------------------------------------------------");
+  print("Challenges");
+  print("-----------------------------------------------------------------------");
+
+  print("Challenge 1: A unique request");
+  print("1. Write a function that takes a paragraph of text and returns a collection of unique String characters that the text contains.");
+
+  List <String> paragraph (String text) {
+
+    print(text);
+    var characters = <String>[];
+    text.runes.forEach((c) {
+      var ch = new String.fromCharCode(c);
+      characters.add(ch);
+    });
+    return characters;
+  }
+
+  print(paragraph("Lorena"));
+  print("-----------------------------------------------------------------------");
+
+  print("Challenge 2: Counting on you");
+  print("1. Repeat Challenge 1, but this time have the function return a collection that contains the frequency, or count, of every unique character.");
+
+  Map <String, int> mapParagraph (String text) {
+
+    print(text);
+    var characters = <String>[];
+
+    text.runes.forEach((c) {
+      var ch = new String.fromCharCode(c);
+      characters.add(ch);
+    });
+
+    var map = <String, int>{};
+
+    characters.forEach((element) {
+      if (!map.containsKey(element)) {
+        map[element] = 1;
+      } else if (map.containsKey(element)) {
+        map.update(element, (value) => value + 1);
+      }
+    });
+
+    return map;
+  }
+
+  print(mapParagraph('cocolino'));
+  print("-----------------------------------------------------------------------");
+
+  print("Challenge 3: Mapping users");
+  print("1. Create a class called User with properties for id and name.");
+  print("2. Make a List with three users, specifying any appropriate names and IDs you like.");
+  print("3. Then write a function that converts your user list to a list of maps whose keys are id and name.");
+
+  final List <User> users = [User("Lorena", 01), User("Luci", 02), User("Mark", 03)];
+
+  List <Map<int, String>> convert() {
+    return users.map((e) => {e.id: e.name}).toList();
+  }
+  print(convert());
+}
+
+class User {
+
+  final String name;
+  final int id;
+
+  User(this.name, this.id);
 }
